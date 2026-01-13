@@ -16,16 +16,34 @@
       <a href="https://tenor.com/view/manja-gif-22885016">Manja Sticker</a>from
       <a href="https://tenor.com/search/manja-stickers">Manja Stickers</a>
     </div>
-    
+
     <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-    <h1>Do you love me? 🤗</h1>
-    <p>nvn is all yours</p>
+    <h1>Do you love me<span id="recipientName"></span>? 🤗</h1>
+    <p><span id="senderName">nvn</span> is all yours</p>
 
     <div class="btn">
       <a href="yes.html">Yes</a>
       <a href="no1.html">No</a>
     </div>
   </div>
+
+  <!-- Custom Name Input Modal -->
+  <div id="nameModal" class="modal-overlay hidden">
+    <div class="modal-content">
+      <h2>Let's make this special! ✨</h2>
+      <p>I need two small details to create your perfect proposal:</p>
+
+      <!-- Sender Input -->
+      <input type="text" id="senderInput" placeholder="Who sent this? (Sender's Name)" />
+
+      <!-- Recipient Input -->
+      <input type="text" id="recipientInput" placeholder="What is your name? (Your Name)" />
+
+      <button id="submitNameBtn">Create Proposal 🚀</button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
